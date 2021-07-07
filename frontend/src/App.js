@@ -1,6 +1,6 @@
 import "./App.css";
 import { data } from "./data";
-import Card from "./components/Card";
+import ProductSingle from "./components/ProductSingle";
 
 function App() {
   return (
@@ -20,9 +20,8 @@ function App() {
         <main>
           <div>
             <div className="row center">
-              {data.products.map((card, index) => {
-                const { name, image, price } = card;
-                return <Card key={index} name={name} image={image} price={price} />;
+              {data.products.map((product, index) => {
+                return <ProductSingle key={index} product={product} />;
               })}
             </div>
           </div>
