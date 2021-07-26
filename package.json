@@ -1,0 +1,53 @@
+{
+  "name": "ecommerce",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ahsanhabibleon/eCommerce.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ahsanhabibleon/eCommerce/issues"
+  },
+  "homepage": "https://github.com/ahsanhabibleon/eCommerce#readme",
+  "devDependencies": {
+    "eslint": "^7.30.0",
+    "eslint-plugin-react": "^7.24.0"
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended"
+  ],
+  "settings": {
+    "react": {
+      "createClass": "createReactClass", 
+                                        
+      "pragma": "React",  
+      "fragment": "Fragment",  
+      "version": "detect", 
+      "flowVersion": "0.53"
+    },
+    "propWrapperFunctions": [
+        "forbidExtraProps",
+        {"property": "freeze", "object": "Object"},
+        {"property": "myFavoriteWrapper"}
+    ],
+    "componentWrapperFunctions": [
+        "observer",
+        {"property": "styled"}, 
+        {"property": "observer", "object": "Mobx"},
+        {"property": "observer", "object": "<pragma>"} 
+    ],
+    "linkComponents": [
+      "Hyperlink",
+      {"name": "Link", "linkAttribute": "to"}
+    ]
+  }
+}
+
